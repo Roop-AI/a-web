@@ -110,10 +110,10 @@ const Hero: React.FC<{ firebaseConfig: any; currentUserToken: string }> = ({
                     fontWeight={300}
                     fontSize={{ base: "12px", sm: "14px", "2xl": "20px" }}
                   >
-                    Create awe-inspiring masterpieces effortlessly and explore
-                    the endless possibilities of AI generated art. Enter a
-                    prompt, choose a style, and watch Addicto - AI art generator
-                    bring your ideas to life!
+                    Adicto: Elevate creativity with this AI art generator. Input
+                    vision, choose style, and unveil awe-inspiring masterpieces.
+                    Explore artistic possibilities at the nexus of technology
+                    and imagination.
                   </Text>
                 </Stack>
                 {shouldDisplay && (

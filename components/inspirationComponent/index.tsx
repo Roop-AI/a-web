@@ -27,6 +27,7 @@ import { useEffect, useState } from "react";
 import PaymentModal from "../paymentModal";
 import { useSubscriptionModal } from "@/hooks/useSubscriptionModal";
 import { fetchAndActivate, getAll } from "firebase/remote-config";
+import AllImages from "@/allImages";
 
 const InspirationComponent: React.FC<{
   currentUserId: string;
@@ -167,7 +168,17 @@ const InspirationComponent: React.FC<{
   }
 
   if (loading) {
-    return <Box className="navigation-loader">Loading...</Box>;
+    return (
+      <Box className="navigation-loader">
+        <Image
+          src={AllImages.adictoGif.src}
+          w={"120px"}
+          h={"120px"}
+          objectFit={"cover"}
+          alt="addicto gif"
+        />
+      </Box>
+    );
   }
   return (
     <Box bg={"#242527"} display={{ base: "none", lg: "grid" }}>

@@ -87,7 +87,7 @@ import heroBg4 from "@/assets/girl-pink-hair.jpg";
 import heroBg5 from "@/assets/girl-red-hair.jpg";
 import heroBg6 from "@/assets/elephant.jpg";
 
-import heroMobileBg from "@/assets/Adictoai.png";
+import heroMobileBg from "@/assets/adictoai.png";
 import impIcon from "@/assets/imp-icon.png";
 import searchIcon from "@/assets/search-icon.png";
 // import rightArrowIcon from "@/assets/model-vector.png";

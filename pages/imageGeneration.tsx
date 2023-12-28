@@ -21,7 +21,7 @@ import { FetchPaidUsersData } from "@/api/paidSubscriptionUsersData";
 import { useSelector } from "react-redux";
 import { selectImageGenerationData } from "@/redux/slices/imageGenerationSlice";
 import IsDisplayEnabled from "@/isDisplayEnable";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 import {
   FirebaseConfig,
   paidUserUnterface,
@@ -30,6 +30,7 @@ import MobileRestriction from "@/components/mobileRestriction";
 import { getCookies } from "cookies-next";
 import { GetServerSidePropsContext } from "next";
 import ImageGenerationNavbar from "@/components/imageGenerationNavbar";
+import AllImages from "@/allImages";
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   const cookies = getCookies(context);
@@ -114,7 +115,18 @@ const ImageGeneration: React.FC<{
   const imageGenerationData = useSelector(selectImageGenerationData);
 
   if (loading) {
-    return <Box className="navigation-loader">Loading...</Box>;
+    return (
+      <Box className="navigation-loader">
+        {" "}
+        <Image
+          src={AllImages.adictoGif.src}
+          w={"120px"}
+          h={"120px"}
+          objectFit={"cover"}
+          alt="addicto gif"
+        />
+      </Box>
+    );
   }
   return (
     <>

@@ -30,9 +30,6 @@ const Home: React.FC<{
 }> = ({ userActivityData, firebaseConfig, currentUserToken }) => {
   return (
     <>
-      <Head>
-        <title>Addicto: AI art generator</title>
-      </Head>
       <Navbar currentUserToken={currentUserToken} />
       <FixedSocialComponent />
       {/* <FixedQrCode /> */}

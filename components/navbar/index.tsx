@@ -139,9 +139,10 @@ const Navbar: React.FC<{ currentUserToken: string }> = (currentUserToken) => {
               w={"88px"}
               objectFit={"contain"}
               cursor={"pointer"}
-              alt="addicto gi"
+              alt="addicto gif"
             />
             <Text
+              display={{ base: "none", md: "grid" }}
               fontFamily="Poppins"
               fontSize={"20px"}
               lineHeight={"30px"}

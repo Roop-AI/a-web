@@ -1481,7 +1481,6 @@ const TextToImageGenerator: React.FC<ImageGenerationProps> = ({
                     pos={"relative"}
                     align={"center"}
                     position={"absolute"}
-                    bg={"red"}
                     style={{ height: "calc(100vh - 160px)" }}
                   >
                     <Flex

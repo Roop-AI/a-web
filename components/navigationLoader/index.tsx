@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { Box } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
+import AllImages from "@/allImages";
 
 const LOADER_THRESHOLD = 250;
 
@@ -39,5 +40,15 @@ export default function NavigationLoader(props: any) {
 
   if (!isLoading) return null;
 
-  return <Box className="navigation-loader">{text}</Box>;
+  return (
+    <Box className="navigation-loader">
+      <Image
+        src={AllImages.adictoGif.src}
+        w={"120px"}
+        h={"120px"}
+        objectFit={"cover"}
+        alt="addicto gif"
+      />
+    </Box>
+  );
 }

@@ -129,7 +129,7 @@ const GeneratedImagesCarausel: React.FC<GeneratedImagesCarauselInterface> = (
           endColor="#2B2C2F"
         />
       ) : props.showLatestImage ? (
-        <Flex w={"70vw"} mx={"auto"} bg={"red"} justify={"center"}>
+        <Flex w={"70vw"} mx={"auto"} justify={"center"}>
           <Wrap spacing={"12px"}>
             {props.latestSelectedImages?.map((images, index) => {
               return (
